@@ -9,17 +9,17 @@ days.forEach(day => {
 
   // 点击标题展开/折叠
   title.addEventListener('click', () => {
-    ul.style.display = ul.style.display === 'none' ? 'block' : 'none';
+    ul.style.display = ul.style.display === 'none' ? 'block': 'none';
     
     // 点击卡片切换背景色
-    if (day.style.backgroundColor === 'pink') {
+    if (day.style.backgroundColor === 'yellow') {
       day.style.backgroundColor = '#ffe4e1';
     } else {
-      day.style.backgroundColor = 'pink';
+      day.style.backgroundColor = 'yellow';
     }
   });
 
-  // 点击每条 li，emoji 跳动
+  // 点击每条 liemoji 跳动
   const items = day.querySelectorAll('li');
   items.forEach(item => {
     item.addEventListener('click', () => {
